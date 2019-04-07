@@ -11,7 +11,7 @@
     "test": "istanbul cover --config=istanbul.json node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=test/jasmine.json",
     "monitor": "snyk test",
     "lint": "tslint 'src/**/*.ts'",
-    "serve": "nodemon --debug dist/index --watch dist",
+    "serve": "nodemon --inspect dist/index --watch dist",
     "watch:test": "watch 'npm run test' dist --wait=0.1",
     "watch:ts": "tsc -w"
   },
